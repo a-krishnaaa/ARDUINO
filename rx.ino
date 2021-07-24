@@ -12,9 +12,6 @@
     CLK    ->   D13
     MOSI   ->   D11
     MISO   ->   D12
-
-This code receive 7 channels and create a PWM output for each one on D2, D3, D4, D5, D6, D7and D8
-Please, like share and subscribe : https://www.youtube.com/c/ELECTRONOOBS
 */
 
 
