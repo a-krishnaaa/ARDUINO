@@ -13,8 +13,6 @@
     MOSI   ->   D11
     MISO   ->   D12
 
-This code transmits 7 channels with data from pins A0, A1, A2, A3, D2 and D3
-Please, like share and subscribe : https://www.youtube.com/c/ELECTRONOOBS
 */
 
 #include <SPI.h>
