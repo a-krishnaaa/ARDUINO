@@ -1,8 +1,4 @@
-/* Receiver code for the Arduino Radio control with PWM output
- * Install the NRF24 library to your IDE
- * Upload this code to the Arduino UNO, NANO, Pro mini (5V,16MHz)
- * Connect a NRF24 module to it:
- 
+/* 
     Module // Arduino UNO,NANO
     
     GND    ->   GND
@@ -18,7 +14,7 @@
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
-#include <Servo.h>  //To create PWM signals we need this lybrary
+#include <Servo.h>  //To create PWM signals we need this library
 
 const uint64_t pipeIn = 0xE8E8F0F0E1LL;     //Remember that this code is the same as in the transmitter
 RF24 radio(9, 10);  //CSN and CE pins
@@ -114,7 +110,7 @@ void loop()
   receive_the_data();
 
 //////////This small if will reset the data if signal is lost for 1 sec.
-/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
   unsigned long now = millis();
   if ( now - lastRecvTime > 1000 ) {
     // signal lost?
