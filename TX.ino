@@ -64,7 +64,7 @@ void loop()
   /*If your channel is reversed, just swap 0 to 255 by 255 to 0 below
   EXAMPLE:
   Normal:    data.ch1 = map( analogRead(A0), 0, 1024, 0, 255);
-  Reversed:  data.ch1 = map( analogRead(A0), 0, 1024, 255, 0);  */
+  Reversed:  data.ch1 = map( analogRead(A1), 0, 1024, 255, 0);  */
   
   sent_data.ch1 = map( analogRead(A0), 0, 1024, 0, 255);
   sent_data.ch2 = map( analogRead(A1), 0, 1024, 0, 255);
